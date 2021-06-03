@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main: hsl(218, 28%, 13%);
+$footer: hsl(219, 30%, 18%);
+$intro: hsl(217, 28%, 15%);
+$testimonials: hsl(219, 30%, 18%);
+
+$error: hsl(0, 100%, 63%);
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+
+$raleway: 'Raleway', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+body {
+    background-color: $intro;
+    font-size: 14px;
+}
+
+.m-1 {
+    margin: 0.25rem;
+}
+.m-2 {
+    margin: 0.5rem;
+}
+.m-3 {
+    margin: 1rem;
+}
+.m-4 {
+    margin: 2rem;
+}
+.m-5 {
+    margin: 4rem;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+.mt-2 {
+    margin-top: 0.5rem;
+}
+.mt-3 {
+    margin-top: 1rem;
+}
+.mt-4 {
+    margin-top: 2rem;
+}
+.mt-5 {
+    margin-top: 4rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+nav {
+    color: $cyan;
+    font-family: $raleway;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 3.5rem;
+}
+
+nav > div {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    color: $cyan;
+    font-family: $raleway;
+}
+
+.center {
+    text-align: center;
+}
+
+.headline {
+    margin: 3rem 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.curve,
+.curve img {
+    width: 100%;
+}

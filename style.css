@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c2431;
+  font-size: 14px;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
+.m-4 {
+  margin: 2rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 4rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+nav {
+  color: #65e2d9;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 3.5rem;
+}
+
+nav > div {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  color: #65e2d9;
+  font-family: "Raleway", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.headline {
+  margin: 3rem 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.curve,
+.curve img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

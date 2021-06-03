@@ -11,6 +11,13 @@
             sizes="32x32"
             href="./images/favicon-32x32.png"
         />
+        <link rel="stylesheet" href="./style.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
 
         <title>
             Frontend Mentor | Fylo landing page with dark theme and features
@@ -29,7 +36,24 @@
         </style>
     </head>
     <body>
-        <footer>
+        <nav>
+            <img src="./images/logo.svg" alt="fylo-logo" />
+            <div>
+                <div>Features</div>
+                <div>Team</div>
+                <div>Sign in</div>
+            </div>
+        </nav>
+        <section class="hero center relative">
+            <img src="./images/illustration-intro.png" alt="" />
+            <h1 class="headline">
+                All your files in one secure location,</br> accessible anywhere.
+            </h1>
+			<div class="curve absolute">
+				<img src="./images/bg-curvy-desktop.svg" alt="">
+			</div>
+        </section>
+        <!-- <footer>
             <p class="attribution">
                 Challenge by
                 <a
@@ -38,6 +62,6 @@
                     >Frontend Mentor</a
                 >. Coded by <a href="#">Rahul Gandhi</a>.
             </p>
-        </footer>
+        </footer> -->
     </body>
 </html>
