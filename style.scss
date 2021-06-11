@@ -5,7 +5,7 @@
 }
 
 $main: hsl(218, 28%, 13%);
-$footer: hsl(219, 30%, 18%);
+$footer: hsl(216, 53%, 9%);
 $intro: hsl(217, 28%, 15%);
 $testimonials: hsl(219, 30%, 18%);
 
@@ -21,6 +21,7 @@ body {
     position: relative;
     background-color: $intro;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .m-1 {
@@ -53,6 +54,9 @@ body {
 }
 .mt-5 {
     margin-top: 4rem;
+}
+.mb-4 {
+    margin-bottom: 2rem;
 }
 
 .relative {
@@ -129,16 +133,20 @@ nav > div {
 .get-started-btn {
     cursor: pointer;
     font-size: 16px;
-    border-radius: 30px;
     padding: 18px 88px;
+}
+
+.button {
     border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-family: $raleway;
     // background: linear-gradient(to right, $cyan, $blue);
     background: linear-gradient(50deg, $cyan, $blue);
     color: white;
-    transition: all 0.3s ease-in-out;
 }
 
-.get-started-btn:hover {
+.button:hover {
     background: linear-gradient(to right, $cyan, $cyan);
 }
 
@@ -219,6 +227,7 @@ nav > div {
 .testimonials {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
+    padding-bottom: 20rem;
     font-family: $raleway;
 }
 
@@ -244,12 +253,101 @@ nav > div {
     font-family: $raleway;
     line-height: 1.5;
     font-size: 16px;
+    box-shadow: rgba(32, 42, 60, 0.2) 0px 2px 8px 8px;
 }
 
 .avatar {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.name,
+.designation {
+    font-size: 12px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+footer {
+    background-color: $footer;
+    color: $white;
+    font-family: $raleway;
+}
+
+.contactUs {
+    background-color: $intro;
+    width: 50%;
+    padding: 2rem 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 10px;
+}
+
+.contactUs p {
+    color: $cyan;
+    line-height: 1.5;
+}
+
+.email {
+    font-family: $raleway;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 34px;
+    width: 65%;
+}
+
+.email:focus-visible {
+    outline: none;
+}
+
+.get-started {
+    padding: 14px 34px;
+}
+
+.footer {
+    padding-top: 15rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    color: $cyan;
+    font-family: $raleway;
+    padding-bottom: 5.5rem;
+}
+
+.footer .bi {
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid $white;
+    border-radius: 50px;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.address {
+    width: 30%;
+    line-height: 1.5;
+}
+
+.footer-links {
+    line-height: 2.5;
 }
 
 // ---------------------------- Break points ---------------------------- //
