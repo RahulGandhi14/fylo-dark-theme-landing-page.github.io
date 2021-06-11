@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   background-color: #1c2431;
@@ -72,6 +76,10 @@ nav {
   margin: 4rem 4.5rem;
 }
 
+nav > div a {
+  color: #65e2d9;
+}
+
 nav > div {
   width: 20%;
   display: flex;
@@ -127,12 +135,12 @@ nav > div {
 }
 
 .get-started-btn {
-  cursor: pointer;
   font-size: 16px;
   padding: 18px 88px;
 }
 
 .button {
+  cursor: pointer;
   border: none;
   border-radius: 30px;
   font-weight: 600;
@@ -343,6 +351,10 @@ footer {
 
 .footer-links {
   line-height: 2.5;
+}
+
+.attribution a {
+  color: #65e2d9;
 }
 
 @media (max-width: 768px) {

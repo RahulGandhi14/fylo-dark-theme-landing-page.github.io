@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 $main: hsl(218, 28%, 13%);
 $footer: hsl(216, 53%, 9%);
 $intro: hsl(217, 28%, 15%);
@@ -76,6 +80,10 @@ nav {
     margin: 4rem 4.5rem;
 }
 
+nav > div a {
+    color: $cyan;
+}
+
 nav > div {
     width: 20%;
     display: flex;
@@ -131,12 +139,12 @@ nav > div {
 }
 
 .get-started-btn {
-    cursor: pointer;
     font-size: 16px;
     padding: 18px 88px;
 }
 
 .button {
+    cursor: pointer;
     border: none;
     border-radius: 30px;
     font-weight: 600;
@@ -348,6 +356,10 @@ footer {
 
 .footer-links {
     line-height: 2.5;
+}
+
+.attribution a {
+    color: $cyan;
 }
 
 // ---------------------------- Break points ---------------------------- //
