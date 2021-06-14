@@ -382,11 +382,11 @@ footer {
         margin: 4rem 2rem;
     }
     nav img {
-        width: 120px;
+        width: 90px;
         height: auto;
     }
     nav > div {
-        width: 55% !important;
+        width: 60% !important;
     }
 
     .details {
@@ -400,6 +400,14 @@ footer {
 
     .filer {
         height: 380px !important;
+    }
+
+    .testimonials {
+        padding: 0 2rem 20rem 2rem !important;
+    }
+
+    .contactUs {
+        padding: 2rem !important;
     }
 }
 @media (max-width: 768px) {
