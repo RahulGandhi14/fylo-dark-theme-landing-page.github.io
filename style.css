@@ -82,6 +82,7 @@ nav {
 
 nav > div a {
   color: #65e2d9;
+  text-decoration: none;
 }
 
 nav > div {
