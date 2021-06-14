@@ -44,8 +44,8 @@
             <img src="./images/logo.svg" alt="fylo-logo" />
             <div>
                 <a href="#features">Features</a>
-                <a>Team</a>
-                <a>Sign in</a>
+                <a href="#testimonials">Team</a>
+                <a href="#signIn">Sign in</a>
             </div>
         </nav>
         <section class="hero center relative">
@@ -66,12 +66,13 @@
                 </p>
                 <button class="button get-started-btn">Get Started</button>
             </div>
+            <div class="filer"></div>
         </section>
         <section class="features" id="features">
             <div class="grid-features">
                 <div class="grid-items">
                     <img src="./images/icon-access-anywhere.svg" alt="" />
-                    <h1>Access your files, anywhere</h1>
+                    <h1 class="center">Access your files, anywhere</h1>
                     <p class="center mt-2">
                         The ability to use a smartphone, tablet, or computer to
                         access your account means your files follow you
@@ -80,7 +81,7 @@
                 </div>
                 <div class="grid-items">
                     <img src="./images/icon-security.svg" alt="" />
-                    <h1>Security you can trust</h1>
+                    <h1 class="center">Security you can trust</h1>
                     <p class="center mt-2">
                         2-factor authentication and user-controlled encryption
                         are just a couple of the security features we allow to
@@ -89,7 +90,7 @@
                 </div>
                 <div class="grid-items">
                     <img src="./images/icon-collaboration.svg" alt="" />
-                    <h1>Real-time collaboration</h1>
+                    <h1 class="center">Real-time collaboration</h1>
                     <p class="center mt-2">
                         Securely share files and folders with friends, family
                         and colleagues for live collaboration. No email
@@ -98,7 +99,7 @@
                 </div>
                 <div class="grid-items">
                     <img src="./images/icon-any-file.svg" alt="" />
-                    <h1>Store any type of file</h1>
+                    <h1 class="center">Store any type of file</h1>
                     <p class="center mt-2">
                         Whether you're sharing holidays photos or work
                         documents, Fylo has you covered allowing for all file
@@ -108,7 +109,13 @@
             </div>
         </section>
         <section class="tagline">
-            <img src="./images/illustration-stay-productive.png" alt="" />
+            <div class="flex align-center justify-center">
+                <img
+                    class="w-90"
+                    src="./images/illustration-stay-productive.png"
+                    alt=""
+                />
+            </div>
             <div class="flex-col-center">
                 <h1 class="headline-font">
                     Stay productive,<br />
@@ -129,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials relative">
+        <section class="testimonials relative" id="testimonials">
             <img class="absolute" src="./images/bg-quotes.png" alt="" />
             <div class="grid-testimonials">
                 <div class="grid-item">
@@ -188,7 +195,7 @@
                 </div>
             </div>
         </section>
-        <footer class="relative">
+        <footer class="relative" id="signIn">
             <div class="absolute contactUs center">
                 <h1>Get early access today</h1>
                 <p class="mt-4">
@@ -209,54 +216,73 @@
                     </button>
                 </div>
             </div>
-            <div class="footer">
-                <img src="./images/logo.svg" alt="" />
-                <div class="flex space-between mt-4">
-                    <div class="flex space-between address">
-                        <div class="mr-1">
-                            <img src="./images/icon-location.svg" alt="" />
+            <div class="footer_">
+                <div class="footer">
+                    <img src="./images/logo.svg" alt="" />
+                    <div class="flex space-between mt-4">
+                        <div class="flex space-between address">
+                            <div class="mr-1">
+                                <img src="./images/icon-location.svg" alt="" />
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua
+                            </p>
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua
-                        </p>
-                    </div>
-                    <div>
-                        <div class="flex space-between align-center">
-                            <img
-                                src="./images/icon-phone.svg"
-                                alt=""
-                                srcset=""
-                                class="mr-1"
-                            />
-                            <p>+1-543-123-4567</p>
+                        <div>
+                            <div
+                                class="
+                                    flex
+                                    space-between
+                                    align-center
+                                    contact_details
+                                "
+                            >
+                                <img
+                                    src="./images/icon-phone.svg"
+                                    alt=""
+                                    srcset=""
+                                    class="mr-1"
+                                />
+                                <p>+1-543-123-4567</p>
+                            </div>
+                            <div
+                                class="
+                                    flex
+                                    space-between
+                                    mt-3
+                                    align-center
+                                    contact_details
+                                "
+                            >
+                                <img
+                                    src="./images/icon-email.svg"
+                                    alt=""
+                                    srcset=""
+                                    class="mr-1"
+                                />
+                                <p>email@fylo.com</p>
+                            </div>
                         </div>
-                        <div class="flex space-between mt-3 align-center">
-                            <img
-                                src="./images/icon-email.svg"
-                                alt=""
-                                srcset=""
-                                class="mr-1"
-                            />
-                            <p>email@fylo.com</p>
+                        <div class="footer-links">
+                            <p>About us</p>
+                            <p>Jobs</p>
+                            <p>Press</p>
+                            <p>Blog</p>
                         </div>
-                    </div>
-                    <div class="footer-links">
-                        <p>About us</p>
-                        <p>Jobs</p>
-                        <p>Press</p>
-                        <p>Blog</p>
-                    </div>
-                    <div class="footer-links">
-                        <p>Contact us</p>
-                        <p>Terms</p>
-                        <p>Privacy</p>
-                    </div>
-                    <div class="flex space-between">
-                        <i class="bi bi-facebook mr-1"></i>
-                        <i class="bi bi-twitter mr-1"></i>
-                        <i class="bi bi-instagram"></i>
+                        <div class="footer-links">
+                            <p>Contact us</p>
+                            <p>Terms</p>
+                            <p>Privacy</p>
+                        </div>
+                        <div class="social_media">
+                            <div class="flex space-between">
+                                <i class="bi bi-facebook mr-1"></i>
+                                <i class="bi bi-twitter mr-1"></i>
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

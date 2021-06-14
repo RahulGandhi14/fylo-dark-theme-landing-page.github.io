@@ -63,6 +63,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.w-90 {
+    width: 90%;
+}
+
 .relative {
     position: relative;
 }
@@ -122,6 +126,7 @@ nav > div {
 .curve,
 .curve img {
     width: 100%;
+    overflow: hidden;
 }
 
 .details {
@@ -283,6 +288,10 @@ nav > div {
     align-items: center;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .name,
 .designation {
     font-size: 12px;
@@ -317,7 +326,7 @@ footer {
     font-family: $raleway;
     border: none;
     border-radius: 30px;
-    padding: 8px 34px;
+    padding: 8px 28px;
     width: 65%;
 }
 
@@ -326,7 +335,7 @@ footer {
 }
 
 .get-started {
-    padding: 14px 34px;
+    padding: 14px 28px;
 }
 
 .footer {
@@ -354,8 +363,13 @@ footer {
     line-height: 1.5;
 }
 
+.address img {
+    margin-top: 5px;
+}
+
 .footer-links {
     line-height: 2.5;
+    cursor: pointer;
 }
 
 .attribution a {
@@ -364,6 +378,29 @@ footer {
 
 // ---------------------------- Break points ---------------------------- //
 @media (max-width: 576px) {
+    nav {
+        margin: 4rem 2rem;
+    }
+    nav img {
+        width: 120px;
+        height: auto;
+    }
+    nav > div {
+        width: 55% !important;
+    }
+
+    .details {
+        width: 80% !important;
+    }
+
+    .curve {
+        bottom: 380px !important;
+        height: 25% !important;
+    }
+
+    .filer {
+        height: 380px !important;
+    }
 }
 @media (max-width: 768px) {
     .intro,
@@ -374,16 +411,212 @@ footer {
     .headline {
         font-size: 28px !important;
     }
+
+    .contactUs {
+        width: 90%;
+    }
+
+    .contactUs > div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactUs input {
+        margin-bottom: 1rem;
+        padding: 14px 34px;
+    }
+
+    .contactUs input,
+    .contactUs button {
+        width: 100%;
+    }
+
+    nav > div {
+        width: 50%;
+    }
+    .tagline {
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .tagline .w-90 {
+        margin-bottom: 2rem;
+    }
+    .grid-features {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .grid-testimonials {
+        grid-template-columns: 1fr;
+    }
+    .testimonials {
+        padding: 0 4rem 20rem 4rem;
+    }
+    .details {
+        width: 70%;
+    }
+    .curve {
+        bottom: 300px;
+        height: 30%;
+    }
+    .filer {
+        z-index: -1;
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        bottom: 0;
+        background-color: $main;
+    }
 }
-@media (max-width: 992px) {
+@media (max-width: 895px) {
+    .footer_ {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .footer {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: baseline;
+        padding: 15rem 0 0 0;
+    }
+    .footer > .flex {
+        flex-direction: column;
+    }
+    .address {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .address > div {
+        margin-right: 1.5rem !important;
+    }
+    .social_media {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .contact_details {
+        justify-content: unset;
+        margin-bottom: 1rem !important;
+    }
+    .contact_details img {
+        height: 13px;
+        margin-right: 1.5rem !important;
+    }
+    .footer-links {
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 895px) and (min-width: 767px) {
+    .intro,
+    .headline {
+        width: 75%;
+    }
+    .contactUs {
+        width: 90%;
+    }
+    .grid-features {
+        width: 80%;
+    }
+    nav > div {
+        width: 40%;
+    }
+    .grid-testimonials {
+        grid-template-columns: 1fr 1fr;
+    }
+    .tagline {
+        grid-template-columns: 1fr;
+    }
+    .tagline .w-90 {
+        margin-bottom: 2rem;
+    }
+    .details {
+        width: 70%;
+    }
+    .curve {
+        bottom: 150px;
+        height: 35%;
+    }
+    .filer {
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        bottom: 0;
+        background-color: $main;
+    }
+}
+@media (max-width: 992px) and (min-width: 894px) {
     .intro,
     .headline {
         width: 60%;
     }
-
     .headline {
         font-size: 36px;
     }
+    .email {
+        width: 60%;
+    }
+    .contactUs {
+        width: 70%;
+    }
+    .grid-features {
+        width: 80%;
+    }
+    nav > div {
+        width: 35%;
+    }
+    .grid-testimonials {
+        grid-template-columns: 1fr 1fr;
+    }
+    .curve {
+        height: 40%;
+    }
+    .details {
+        width: 70%;
+    }
+    .footer {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
 }
-// @media (max-width: 1200px) {
-// }
+@media (max-width: 1191px) and (min-width: 991px) {
+    .intro,
+    .headline {
+        width: 60%;
+    }
+    .details {
+        width: 45%;
+    }
+    .email {
+        width: 60%;
+    }
+    .contactUs {
+        width: 60%;
+    }
+    .grid-features {
+        width: 70%;
+    }
+    nav > div {
+        width: 30%;
+    }
+    .curve {
+        height: 50%;
+    }
+}
+@media (max-width: 1204px) and (min-width: 1190px) {
+    .contactUs {
+        width: 55%;
+    }
+}
+@media (max-width: 1336px) and (min-width: 1203px) {
+    .email {
+        width: 60%;
+    }
+    .curve {
+        height: 45%;
+    }
+}
