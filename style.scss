@@ -368,8 +368,9 @@ footer {
     margin-top: 5px;
 }
 
-.footer-links {
-    line-height: 2.5;
+.footer-links p {
+    // line-height: 2.5;
+    margin-bottom: 1rem;
     cursor: pointer;
 }
 
